@@ -22,8 +22,6 @@ class Process:
 
         body = base64.b64decode(body)
 
-        print(body)
-
         content_type = self.validate_header_content_type(event)
 
         params = self.validate_query_string_param(event)
